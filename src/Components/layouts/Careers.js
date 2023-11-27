@@ -242,9 +242,9 @@ export default class Careers extends Component {
               </div>
             </div>
 
-            <div class="col-lg-6 pr-6">
+            <div class="col-lg-6 " >
               <div class="info-box1 ">
-                <iframe
+                {/* <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSedGyzTjXRBMurXMnb7vAquvLfgVjS7TuWo0lfKp-yiHl-zSA/viewform?embedded=true"
                   width="500"
                   height="1707"
@@ -253,7 +253,52 @@ export default class Careers extends Component {
                   marginwidth="0"
                 >
                   Loading…
-                </iframe>
+                </iframe> */}
+                <div class="col-lg-12 mt-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              
+              <div class="row ">
+                <div class="col-md-12 form-group m-2 ">
+                <label>
+      <input type="radio" name="options" value="Select"/>
+      Select &nbsp;
+
+    </label>
+
+    <label>
+      <input type="radio" name="options" value="Mr."/>
+      Mr. &nbsp;
+
+    </label>
+
+    <label>
+      <input type="radio" name="options" value="Mrs."/>
+      Mrs. &nbsp;
+
+    </label>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Fname" class="form-control" id="firstname" placeholder="First Name" required/>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Lname" class="form-control" id="lastname" placeholder="Last Name" required/>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
+              </div>
+              
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
               </div>
             </div>
           </div>
