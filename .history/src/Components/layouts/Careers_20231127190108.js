@@ -264,8 +264,8 @@ export default class Careers extends Component {
                     <div class="row ">
                       <div class="col-md-12 form-group m-2 ">
                         <label>
-                          <input type="radio" name="options" value="Ms. " />
-                          &nbsp; Ms. &nbsp;
+                          <input type="radio" name="options" value="Select" />
+                          &nbsp; Select &nbsp;
                         </label>
 
                         <label>
@@ -310,55 +310,25 @@ export default class Careers extends Component {
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
                         <input
-                          type="phoneNumber"
-                          class="form-control"
-                          name="phoneN"
-                          id="phoneNumber"
-                          placeholder="Your Phone Number"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="role"
-                          class="form-control"
-                          name="roleN"
-                          id="role"
-                          placeholder="Role apply for"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
                           type="refer"
                           class="form-control"
                           name="referN"
-                          id="refer"
-                          placeholder="Your Referral"
+                          id="email"
+                          placeholder="Your Email"
                           required
                         />
                       </div>
-
                     </div>
-                    <div class="col-md-12 form-group m-2 ">
-                      <h6>Preferred time to call?</h6>
-                        <label>
-                          <input type="radio" name="options" value="Select" />
-                          &nbsp; Morning &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="radio" name="options" value="Mr." />
-                          &nbsp; Afternoon &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="radio" name="options" value="Mrs." />
-                          &nbsp; Evening &nbsp;
-                        </label>
-                      </div>
+                    <div class="form-group mt-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                        required
+                      />
+                    </div>
 
                     <div class="my-3">
                       <div class="loading">Loading</div>

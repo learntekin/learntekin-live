@@ -310,22 +310,11 @@ export default class Careers extends Component {
                       </div>
                       <div class="col-md-6 form-group mt-3 mt-md-0">
                         <input
-                          type="phoneNumber"
+                          type="refer"
                           class="form-control"
-                          name="phoneN"
-                          id="phoneNumber"
-                          placeholder="Your Phone Number"
-                          required
-                        />
-                      </div>
-
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="role"
-                          class="form-control"
-                          name="roleN"
-                          id="role"
-                          placeholder="Role apply for"
+                          name="referN"
+                          id="refer"
+                          placeholder="Your Referral"
                           required
                         />
                       </div>

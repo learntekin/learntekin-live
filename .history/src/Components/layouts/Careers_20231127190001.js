@@ -142,12 +142,12 @@ export default class Careers extends Component {
                           </i>
 
                           <p align="justify">
-                            <h2>Technical Writer and researchers:</h2> We
-                            provide research and development services on all
-                            technical and non-technical domains. Our team of
-                            researchers and developers can help you with product
-                            research and development, market research, and more.
-                            We use the latest research tools and technologies to
+                            <h2>Technical Writer and researchers:</h2> We provide
+                            research and development services on all technical
+                            and non-technical domains. Our team of researchers
+                            and developers can help you with product research
+                            and development, market research, and more. We use
+                            the latest research tools and technologies to
                             deliver results that are accurate and relevant.
                           </p>
                         </div>
@@ -164,9 +164,9 @@ export default class Careers extends Component {
                           </i>
 
                           <p align="justify">
-                            <h2>Data Analyzer and Data scientists</h2> Our team
-                            of data analysts and data scientists can help you
-                            make sense of your data. We use the latest tools and
+                            <h2>Data Analyzer and Data scientists</h2> Our team of
+                            data analysts and data scientists can help you make
+                            sense of your data. We use the latest tools and
                             technologies to analyze and visualize data, which
                             helps our clients make informed decisions.
                           </p>
@@ -184,9 +184,9 @@ export default class Careers extends Component {
                           </i>
 
                           <p align="justify">
-                            <h2>RPA and IoT Device Developer and Tester</h2> We
-                            provide RPA and IoT device development and testing
-                            services to help our clients automate their
+                            <h2>RPA and IoT Device Developer and Tester</h2>{" "}
+                            We provide RPA and IoT device development and
+                            testing services to help our clients automate their
                             processes and improve efficiency. Our team of
                             experts uses the latest technologies and tools to
                             develop and test RPA and IoT devices that are
@@ -242,7 +242,7 @@ export default class Careers extends Component {
               </div>
             </div>
 
-            <div class="col-lg-6 ">
+            <div class="col-lg-6 " >
               <div class="info-box1 ">
                 {/* <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSedGyzTjXRBMurXMnb7vAquvLfgVjS7TuWo0lfKp-yiHl-zSA/viewform?embedded=true"
@@ -255,123 +255,50 @@ export default class Careers extends Component {
                   Loading…
                 </iframe> */}
                 <div class="col-lg-12 mt-6">
-                  <form
-                    action="forms/contact.php"
-                    method="post"
-                    role="form"
-                    class="php-email-form"
-                  >
-                    <div class="row ">
-                      <div class="col-md-12 form-group m-2 ">
-                        <label>
-                          <input type="radio" name="options" value="Ms. " />
-                          &nbsp; Ms. &nbsp;
-                        </label>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              
+              <div class="row ">
+                <div class="col-md-12 form-group m-2 ">
+                <label>
+      <input type="radio" name="options" value="Select"/>
+      &nbsp; Select &nbsp;
 
-                        <label>
-                          <input type="radio" name="options" value="Mr." />
-                          &nbsp; Mr. &nbsp;
-                        </label>
+    </label>
 
-                        <label>
-                          <input type="radio" name="options" value="Mrs." />
-                          &nbsp; Mrs. &nbsp;
-                        </label>
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <input
-                          type="text"
-                          name="Fname"
-                          class="form-control"
-                          id="firstname"
-                          placeholder="First Name"
-                          required
-                        />
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <input
-                          type="text"
-                          name="Lname"
-                          class="form-control"
-                          id="lastname"
-                          placeholder="Last Name"
-                          required
-                        />
-                      </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="email"
-                          class="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Your Email"
-                          required
-                        />
-                      </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="phoneNumber"
-                          class="form-control"
-                          name="phoneN"
-                          id="phoneNumber"
-                          placeholder="Your Phone Number"
-                          required
-                        />
-                      </div>
+    <label>
+      <input type="radio" name="options" value="Mr."/>
+      &nbsp; Mr. &nbsp;
 
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="role"
-                          class="form-control"
-                          name="roleN"
-                          id="role"
-                          placeholder="Role apply for"
-                          required
-                        />
-                      </div>
+    </label>
 
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        <input
-                          type="refer"
-                          class="form-control"
-                          name="referN"
-                          id="refer"
-                          placeholder="Your Referral"
-                          required
-                        />
-                      </div>
+    <label>
+      <input type="radio" name="options" value="Mrs."/>
+      &nbsp; Mrs. &nbsp;
 
-                    </div>
-                    <div class="col-md-12 form-group m-2 ">
-                      <h6>Preferred time to call?</h6>
-                        <label>
-                          <input type="radio" name="options" value="Select" />
-                          &nbsp; Morning &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="radio" name="options" value="Mr." />
-                          &nbsp; Afternoon &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="radio" name="options" value="Mrs." />
-                          &nbsp; Evening &nbsp;
-                        </label>
-                      </div>
-
-                    <div class="my-3">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">
-                        Your message has been sent. Thank you!
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <button type="submit">Send Message</button>
-                    </div>
-                  </form>
+    </label>
                 </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Fname" class="form-control" id="firstname" placeholder="First Name" required/>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" name="Lname" class="form-control" id="lastname" placeholder="Last Name" required/>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
+              </div>
+              
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
               </div>
             </div>
           </div>

@@ -41,19 +41,13 @@ export default class Contact extends Component {
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="info-box mt-4">
-                  <i class="bi bi-clock flex-shrink-0"></i>
+                <div class="info-item d-flex">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
                   <h4>Open Hours:</h4>
-                  <p>Mon-Fri: 9AM - 5PM</p>
-             
-                  </div>
+                  <p>Mon-Sat: 11AM - 23PM</p>
                 </div>
-                <div class="col-md-6">
-                  
-                </div>
-
-                
+              </div>
               </div>
             </div>
 

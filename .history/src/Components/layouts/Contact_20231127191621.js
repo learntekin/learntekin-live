@@ -46,7 +46,7 @@ export default class Contact extends Component {
                   <i class="bi bi-clock flex-shrink-0"></i>
                   <h4>Open Hours:</h4>
                   <p>Mon-Fri: 9AM - 5PM</p>
-             
+                  <p></p>
                   </div>
                 </div>
                 <div class="col-md-6">

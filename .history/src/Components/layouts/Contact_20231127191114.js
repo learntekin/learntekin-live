@@ -43,10 +43,11 @@ export default class Contact extends Component {
 
                 <div class="col-md-6">
                   <div class="info-box mt-4">
-                  <i class="bi bi-clock flex-shrink-0"></i>
-                  <h4>Open Hours:</h4>
-                  <p>Mon-Fri: 9AM - 5PM</p>
-             
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>
+                    <a  href="tel: +91-638-242-2474 "> Phone:+91-638-242-2474 </a>
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-6">

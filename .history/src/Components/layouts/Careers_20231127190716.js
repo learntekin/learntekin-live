@@ -314,7 +314,7 @@ export default class Careers extends Component {
                           class="form-control"
                           name="phoneN"
                           id="phoneNumber"
-                          placeholder="Your Phone Number"
+                          placeholder="Your Referral"
                           required
                         />
                       </div>
