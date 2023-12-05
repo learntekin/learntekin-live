@@ -5,6 +5,93 @@ export default class Careers extends Component {
     document.title = "Careers";
   }
   render() {
+    // State variables for form fields and errors
+    const [salutation, setSalutation] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [role, setRole] = useState("");
+    const [referral, setReferral] = useState("");
+    const [morning, setMorning] = useState(false);
+    const [afternoon, setAfternoon] = useState(false);
+    const [evening, setEvening] = useState(false);
+
+    // State variable for general form error
+    const [formError, setFormError] = useState("");
+
+    // Form submission handler
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      // Validation checks
+      if (!salutation || !firstName || !lastName || !email || !phoneNumber || !role || !referral) {
+        setFormError("All fields are required");
+        return;
+      }
+
+      // Additional validation checks as needed
+      // (e.g., validate email format, phone number format, etc.)
+
+      // If all validations pass, you can proceed with form submission
+      setFormError("");
+      // TODO: Handle form submission logic (e.g., make API call)
+    };
+
+    return (
+      <section id="careers" className="contact">
+        <div className="container-fluid mt-5" data-aos="fade-up">
+          {/* ... (existing code) */}
+          <div className="col-lg-12 mt-6">
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              className="php-email-form"
+              onSubmit={handleSubmit}
+            >
+              {/* ... (existing form fields) */}
+              <div className="col-md-12 form-group m-2">
+                <h6>Preferred time to call?</h6>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="morning"
+                    checked={morning}
+                    onChange={() => setMorning(!morning)}
+                  />
+                  &nbsp; Morning &nbsp;
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="afternoon"
+                    checked={afternoon}
+                    onChange={() => setAfternoon(!afternoon)}
+                  />
+                  &nbsp; Afternoon &nbsp;
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="evening"
+                    checked={evening}
+                    onChange={() => setEvening(!evening)}
+                  />
+                  &nbsp; Evening &nbsp;
+                </label>
+              </div>
+              <div className="my-3">
+                <div className="error-message">{formError}</div>
+              </div>
+              <div className="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    );
     return (
       <section id="careers" class="contact">
         <div class="container-fluid mt-5" data-aos="fade-up">
@@ -335,7 +422,7 @@ export default class Careers extends Component {
                     </div>
                     <div class="col-md-12 form-group m-2 ">
                       <h6>Preferred time to call?</h6>
-                    
+                      
 
                         <label>
                           <input type="checkbox" name="morning" value="morning" />

@@ -260,12 +260,12 @@ export default class Careers extends Component {
                         </label>
 
                         <label>
-                          <input type="radio" name="options" value="Mr." />
+                          <input type="radio" name="" value="Mr." />
                           &nbsp; Mr. &nbsp;
                         </label>
 
                         <label>
-                          <input type="radio" name="options" value="Mrs." />
+                          <input type="radio" name="Mrs." value="Mrs." />
                           &nbsp; Mrs. &nbsp;
                         </label>
                       </div>
@@ -335,8 +335,6 @@ export default class Careers extends Component {
                     </div>
                     <div class="col-md-12 form-group m-2 ">
                       <h6>Preferred time to call?</h6>
-                    
-
                         <label>
                           <input type="checkbox" name="morning" value="morning" />
                           &nbsp; Morning &nbsp;
@@ -348,7 +346,7 @@ export default class Careers extends Component {
                         </label>
 
                         <label>
-                          <input type="checkbox" name="evening" value="evening" />
+                          <input type="radio" name="evening" value="evening" />
                           &nbsp; Evening &nbsp;
                         </label>
                       </div>

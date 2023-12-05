@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- 
+import "./contact.php"
 export default class Contact extends Component {
   componentDidMount()
   {

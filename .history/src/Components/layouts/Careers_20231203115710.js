@@ -244,7 +244,6 @@ export default class Careers extends Component {
 
             <div class="col-lg-6 ">
               <div class="info-box1 ">
-    
                 <div class="col-lg-12 mt-6">
                   <form
                     action="forms/contact.php"
@@ -331,27 +330,43 @@ export default class Careers extends Component {
                           required
                         />
                       </div>
-
                     </div>
                     <div class="col-md-12 form-group m-2 ">
                       <h6>Preferred time to call?</h6>
-                    
-
-                        <label>
-                          <input type="checkbox" name="morning" value="morning" />
-                          &nbsp; Morning &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="checkbox" name="afternoon" value="afternoon" />
-                          &nbsp; Afternoon &nbsp;
-                        </label>
-
-                        <label>
-                          <input type="checkbox" name="evening" value="evening" />
-                          &nbsp; Evening &nbsp;
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckIndeterminate"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="flexCheckIndeterminate"
+                        >
+                          Indeterminate checkbox
                         </label>
                       </div>
+
+                      <label>
+                        <input type="checkbox" name="morning" value="morning" />
+                        &nbsp; Morning &nbsp;
+                      </label>
+
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="afternoon"
+                          value="afternoon"
+                        />
+                        &nbsp; Afternoon &nbsp;
+                      </label>
+
+                      <label>
+                        <input type="checkbox" name="evening" value="evening" />
+                        &nbsp; Evening &nbsp;
+                      </label>
+                    </div>
 
                     <div class="my-3">
                       <div class="loading">Loading</div>

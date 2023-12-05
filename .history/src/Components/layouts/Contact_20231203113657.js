@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- 
+import "./contact.php"
 export default class Contact extends Component {
   componentDidMount()
   {
@@ -61,7 +61,7 @@ export default class Contact extends Component {
             
       
               <div class="col-lg-6 mt-4">
-            <form action="./contact.php" method="post" role="form" class="php-email-form">
+            <form action="./contact.phpcontact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>

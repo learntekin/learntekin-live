@@ -335,10 +335,10 @@ export default class Careers extends Component {
                     </div>
                     <div class="col-md-12 form-group m-2 ">
                       <h6>Preferred time to call?</h6>
-                    
+                        
 
-                        <label>
-                          <input type="checkbox" name="morning" value="morning" />
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                          <input class="form-check-input" type="checkbox" name="morning" value="morning" />
                           &nbsp; Morning &nbsp;
                         </label>
 

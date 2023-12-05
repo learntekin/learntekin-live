@@ -255,17 +255,17 @@ export default class Careers extends Component {
                     <div class="row ">
                       <div class="col-md-12 form-group m-2 ">
                         <label>
-                          <input type="radio" name="options" value="Ms. " />
+                          <input type="radio" name="Ms." value="Ms. " />
                           &nbsp; Ms. &nbsp;
                         </label>
 
                         <label>
-                          <input type="radio" name="options" value="Mr." />
+                          <input type="radio" name="Mr." value="Mr." />
                           &nbsp; Mr. &nbsp;
                         </label>
 
                         <label>
-                          <input type="radio" name="options" value="Mrs." />
+                          <input type="radio" name="Mr." value="Mrs." />
                           &nbsp; Mrs. &nbsp;
                         </label>
                       </div>
@@ -335,20 +335,18 @@ export default class Careers extends Component {
                     </div>
                     <div class="col-md-12 form-group m-2 ">
                       <h6>Preferred time to call?</h6>
-                    
-
                         <label>
-                          <input type="checkbox" name="morning" value="morning" />
+                          <input type="radio" name="options" value="morning" />
                           &nbsp; Morning &nbsp;
                         </label>
 
                         <label>
-                          <input type="checkbox" name="afternoon" value="afternoon" />
+                          <input type="radio" name="options" value="afternoon" />
                           &nbsp; Afternoon &nbsp;
                         </label>
 
                         <label>
-                          <input type="checkbox" name="evening" value="evening" />
+                          <input type="radio" name="options" value="evening" />
                           &nbsp; Evening &nbsp;
                         </label>
                       </div>

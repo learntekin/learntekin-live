@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- 
+import "cont"
 export default class Contact extends Component {
   componentDidMount()
   {
@@ -59,9 +59,18 @@ export default class Contact extends Component {
             </div>
 
             
-      
+              {/* <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSedGyzTjXRBMurXMnb7vAquvLfgVjS7TuWo0lfKp-yiHl-zSA/viewform?embedded=true"
+                width="500"
+                height="1707"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+              >
+                Loading…
+              </iframe> */}
               <div class="col-lg-6 mt-4">
-            <form action="./contact.php" method="post" role="form" class="php-email-form">
+            <form action="./forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
