@@ -2,23 +2,30 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import courseDetails from "./Components/layouts/courseDetails";
+import courseDetails from "./Components/courseDetails";
 
 import { Helmet } from "react-helmet";
 // Component Splitted
-import Navbar from "./Components/layouts/Navbar";
-import Services from "./Components/layouts/Services";
-import Hero from "./Components/layouts/Hero";
-import About from "./Components/layouts/About";
-import Products from "./Components/layouts/Products"; 
-import Footer from "./Components/layouts/Footer";
-import End from "./Components/layouts/End";
-import Careers from "./Components/layouts/Careers";
-import Contact from "./Components/layouts/Contact"; 
-import Blogs from "./Components/layouts/Blog";
+import Navbar from "./Components/Navbar";
+import Services from "./Components/Services";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Products from "./Components/Products"; 
+import Footer from "./Components/Footer";
+import End from "./Components/End";
+import Careers from "./Components/Careers";
+import Contact from "./Components/Contact"; 
+import Blogs from "./Components/Blog";
+    //autentication
+import { AuthProvider } from "./Components/auth/authContext";
+import ProtectedRoute from "./Components/auth/protectedRoute";
+import Login from "./Components/auth/Login";
+import Home from"./Components/Home";
 function App() {
  
     return (
+      <AuthProvider>
+
       <Router>
 
         <div className="App">
@@ -40,13 +47,15 @@ function App() {
 
           <Switch>
             <main id="main">
-              <Route exact path="/About" component={About}/>
-              <Route exact path="/Services" component={Services}/>
-              <Route exact path="/Careers" component={Careers}/>
-              <Route exact path="/Contact" component={Contact}/>
-              <Route exact path="/Products" component={Products}/>
-              <Route exact path="/courseDetails" component={courseDetails}/>
-              <Route exact path="/Blogs" component={Blogs}/>
+              <ProtectedRoute  path="/About" component={About}/>
+              <Route exact path="/login" component={Login}/>
+              <ProtectedRoute path="/home" component={Home}/>
+              <ProtectedRoute exact path="/Services" component={Services}/>
+              <ProtectedRoute exact path="/Careers" component={Careers}/>
+              <ProtectedRoute exact path="/Contact" component={Contact}/>
+              <ProtectedRoute exact path="/Products" component={Products}/>
+              <ProtectedRoute exact path="/courseDetails" component={courseDetails}/>
+              <ProtectedRoute exact path="/Blogs" component={Blogs}/>
             </main>
           </Switch>
           
@@ -65,6 +74,7 @@ function App() {
           </a>
         </div>
       </Router>
+      </AuthProvider>
     );
   }
 export default App;
