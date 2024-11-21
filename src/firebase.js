@@ -7,16 +7,17 @@ import { getAuth } from 'firebase/auth';
  
 import "firebase/database";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDlHS_UZ5zGZATHtS1OonoCrX1m9kFnZ6Y",
-    authDomain: "selvfi.firebaseapp.com",
-    databaseURL: "https://selvfi-default-rtdb.firebaseio.com",
-    projectId: "selvfi",
-    storageBucket: "selvfi.appspot.com",
-    messagingSenderId: "80947274395",
-    appId: "1:80947274395:web:ffb698fb40da8908abdc3e",
-    measurementId: "G-SFRCRRDZM1"
-};
+    apiKey: "AIzaSyC6dbehEp7W1xLcy_mKajeAxwEMAJkCR1Y",
+    authDomain: "learntekin-965be.firebaseapp.com",
+    databaseURL: "https://learntekin-965be-default-rtdb.firebaseio.com",
+    projectId: "learntekin-965be",
+    storageBucket: "learntekin-965be.firebasestorage.app",
+    messagingSenderId: "224295322327",
+    appId: "1:224295322327:web:f6c1bde3f6494a17eae692",
+    measurementId: "G-M4C0ZWRMS0"
+  };
 
 const app=firebase.initializeApp(firebaseConfig);
 export const  auth = getAuth(app);

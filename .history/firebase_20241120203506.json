@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "learntek-innovations", 
+   
+    "public": "build", // Directory with your built web app files (e.g., 'build' for React or 'dist' for Angular/Vue)
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
