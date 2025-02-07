@@ -19,9 +19,9 @@ export default class Footer extends Component {
           <div class="col-lg-3 col-md-6 footer-links mt-3">
             <h4 style={{color:'black'}}>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services">Website Development </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Services">Website/App Development </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/Services">UI/UX Development & Designing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services">Android App Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Services">Business Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/Services">Data Analytics | Data Science </a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/Services">Networking | Testing </a></li>
             </ul>
@@ -30,11 +30,11 @@ export default class Footer extends Component {
           <div class="col-lg-3 col-md-6 footer-links mt-3">
             <h4 style={{color:'black'}}>Our Products</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://financefrenzy-biz.web.app/">financeFrenzy</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.learntekin.srisasta.srisastaapp&hl=en">SriSasta</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://play.google.com/store/apps/details?id=com.learntekin.healthpredicct&hl=en">CareGuard</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMqjb4VTQcsqq7W5UblK3B9q1l5vw4wYP7TJr0jF9lThLgtA/viewform">mummyDaddyCars</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://whatsapp.com/channel/0029VatfXYQG3R3k6xYOC63w">Bee-Kart</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://financefrenzy-biz.web.app/" target="_blank">financeFrenzy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  target="_blank" href="https://play.google.com/store/apps/details?id=com.learntekin.srisasta.srisastaapp&hl=en">SriSasta</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.learntekin.healthpredicct&hl=en">CareGuard</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfMqjb4VTQcsqq7W5UblK3B9q1l5vw4wYP7TJr0jF9lThLgtA/viewform">mummyDaddyCars</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://whatsapp.com/channel/0029VatfXYQG3R3k6xYOC63w">Bee-Kart</a></li>
 
 
 

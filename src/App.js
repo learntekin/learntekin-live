@@ -26,7 +26,10 @@ import Register from "./Components/auth/Register";
 import { useState } from "react";
 // warning popup
 import WIPPopup from "./Components/Warnings/WIPPopup";
+import ThoughtLeadersScreen from "./Components/About/ThoughtLeadersScreen"
+
 import FAQSection from "./Components/Blogs/FAQSection";
+
 function App() {
   const [showWIPPopup, setShowWIPPopup] = useState(false);
 
@@ -53,6 +56,9 @@ function App() {
           <Navbar />
 
           <Route exact path="/" component={Hero} />
+          
+          <Route exact path="/" component={ThoughtLeadersScreen} />
+
 
           <Switch>
             <main id="main">
