@@ -211,18 +211,17 @@ const charity=[{
       <div className="leaders-container">
         {/* Render each leader */}
         {charity.map((chars, index) => (
-          <div className="charity-card" key={index}>
+          <div className="leader-card" key={index}>
             <h2>{chars.name}</h2>
             <img
               src={chars.image}
-              style={{ height: "40rem", width: "50rem",margin:"2rem",borderRadius:"3rem" }}
+              style={{ height: "6rem", width: "6rem", borderRadius: "15rem" }}
               alt={chars.name}
             />
           <ul>
-            <li> <h3 align="justify">{chars.description}</h3></li>
-            <li> <h3 align="justify">{chars.benefits}</h3></li>
-          </ul>
             
+          </ul>
+            <h3 align="justify">{chars.description}</h3>
             <a href={chars.link} target="_blank" class="button">
               CONTACT US
             </a>

@@ -105,10 +105,8 @@ const ThoughtLeadersScreen = () => {
   ];
 const charity=[{
   name: "Preethi R",
-  description: "Organized and led a team of volunteers in the #feedthevoiceless project to feed and care for stray dogs in some parts rural Tamil Nadu.",
-  benefits:"I wanted to reach out about a small but impactful project hashtag #collarthevoiceless we're working on—getting reflective collars for stray dogs to keep them safe at night. ",
-  image:"assets/img/charity.jpeg",
-  link:"https://wa.me/+919941918157"
+  description: "Organized and led a team of volunteers in the #feedthevoiceless project to feed and care for stray dogs in some parts rural Tamil Nadu."
+  im
 
 
 
@@ -211,19 +209,16 @@ const charity=[{
       <div className="leaders-container">
         {/* Render each leader */}
         {charity.map((chars, index) => (
-          <div className="charity-card" key={index}>
-            <h2>{chars.name}</h2>
+          <div className="leader-card" key={index}>
+            <h2>{work.location}</h2>
             <img
-              src={chars.image}
-              style={{ height: "40rem", width: "50rem",margin:"2rem",borderRadius:"3rem" }}
-              alt={chars.name}
+              src={work.image}
+              style={{ height: "6rem", width: "6rem", borderRadius: "15rem" }}
+              alt={work.location}
             />
-          <ul>
-            <li> <h3 align="justify">{chars.description}</h3></li>
-            <li> <h3 align="justify">{chars.benefits}</h3></li>
-          </ul>
-            
-            <a href={chars.link} target="_blank" class="button">
+
+            <h3 align="justify">{work.description}</h3>
+            <a href={work.link} target="_blank" class="button">
               CONTACT US
             </a>
           </div>

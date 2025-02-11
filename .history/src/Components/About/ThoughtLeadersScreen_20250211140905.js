@@ -215,7 +215,7 @@ const charity=[{
             <h2>{chars.name}</h2>
             <img
               src={chars.image}
-              style={{ height: "40rem", width: "50rem",margin:"2rem",borderRadius:"3rem" }}
+              style={{ height: "20rem", width: "50rem" }}
               alt={chars.name}
             />
           <ul>
